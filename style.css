@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-weight: 500;
+    font-family: Oswald;
+    color: whitesmoke;
+    position: relative;
+}
+
+body{
+    background-color: rgb(14, 14, 14);
+}
+
+
+#hero{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px auto;
+    margin-top: 20px;
+    position: relative
+}
+
+.logo{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    margin-left: 0px;
+
+
+}
+
+h2{font-size: 2em;}
+h3{font-size: 1.7em;
+margin-bottom: -10px;
+font-weight: bold;
+letter-spacing: 0.8px;
+}
+
+p{font-size: 1.2em;
+margin: 15px 
+}
+
+header{
+    font-size: 1.5em;
+    margin: 5px 15px 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.2px solid #9627a0bd;
+    color: white;
+}
+
+nav{
+    margin-right: 35px;
+    float: right;
+    display: flex;
+}
+
+a{ 
+    margin-left: 10%;
+    margin-top: 20%;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 800;  
+}
+
+
+#cositas{
+    margin: 20px;
+}
+
+#move{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.if-link{
+    margin: 0 auto;
+    border: none;
+    background: none;
+    color: #fff;
+    padding: 0 0 0.5rem;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.if-link > span{
+    overflow: hidden;
+    display: block;
+    position: relative;
+    pointer-events: none;
+}
+
+.if-link > span > span {
+    display: inline-block;
+}
+
+.if-link > span > span:nth-of-type(1){
+    transition: 0.4s ease all;   
+}
+
+.if-link > span > span:nth-of-type(2){
+    transition: 0.4s ease all;
+    transition-delay: 0.07s;
+}
+.if-link > span > span > span{
+    content: attr(data-text);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(200%);
+}
+.if-link:hover > span > span,
+.if-link:focus > span > span {
+    transform: translateY(-200%);
+} 
+
+#cursor {
+    pointer-events: none;
+    width: 3rem;
+    height: 3rem;
+    border: solid 1px rgba(255,255,255,255 0.2);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.35s ease width, 0.35s ease height, 0.35s ease border, 0.35s ease background;
+    transform: translate(-50%, -50%);
+}
+#cursor.button {
+    width: 5rem;
+    height: 5rem;
+    border: solid 1px transparent;
+    background: rgba(255,255,255, 0.5);
+}
+button{
+    font-size: 1.5em;
+    font-weight: 800;
+    letter-spacing: 5px;
+    position: absolute;
+    border-radius: 10px;
+    border-color: rgba(169, 169, 169, 0);
+    background-color: rgba(73, 0, 104, 0.393);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.wallpaper{
+    width: 100%;
+    height: 100%;
+    opacity: 70%;
+}
+
+#games{ 
+margin: 20px;
+}
+
+.swiper {
+    margin-top: 20px;
+    width: 70%;
+    height: 70%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0);
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .juegos{
+    margin-top: 20px;
+  }
+  
+.divisor{
+    height: 1px;
+  margin-left: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#9627a0bd, #9fa4db);
+  margin-bottom: 10px;
+  margin-top: 20px;
+  /* background-color:linear-gradient(#9627a0bd,#373038a5); */
+}
+
+footer{
+    padding: 5%;
+    font-size: 15px;
+    font-weight: 10px ;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
